@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    
+    @IBAction func button(_ sender: UIButton) {
+        print("Hello Button Event!")
+        lbl.text = "Hello~"
+        
+        
+    }
+    @IBAction func btn(_ sender: UIButton) {
+        lbl.text = ""
+        
+    }
+    @IBAction func btnC(_ sender: Any) {
+        self.view.backgroundColor = UIColor.white
+    }
+    
 }
 
